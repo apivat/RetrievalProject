@@ -1,0 +1,116 @@
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed'); ?>
+
+ERROR - 2011-09-28 14:24:05 --> Unable to select database: treval
+ERROR - 2011-09-28 14:26:06 --> Unable to select database: treval
+ERROR - 2011-09-28 14:29:16 --> Unable to select database: treval
+ERROR - 2011-09-28 14:29:32 --> Severity: Notice  --> Undefined variable: status C:\AppServ\www\dss_trevaling\cms\application\views\login.php 20
+ERROR - 2011-09-28 14:29:32 --> 404 Page Not Found --> public
+ERROR - 2011-09-28 14:29:38 --> 404 Page Not Found --> public
+ERROR - 2011-09-28 14:29:45 --> 404 Page Not Found --> public
+ERROR - 2011-09-28 14:29:45 --> 404 Page Not Found --> library
+ERROR - 2011-09-28 14:30:26 --> Severity: Notice  --> Undefined variable: status C:\AppServ\www\dss_trevaling\cms\application\views\login.php 20
+ERROR - 2011-09-28 14:30:26 --> 404 Page Not Found --> public
+ERROR - 2011-09-28 14:30:30 --> Severity: Notice  --> Undefined variable: status C:\AppServ\www\dss_trevaling\cms\application\views\login.php 20
+ERROR - 2011-09-28 14:30:30 --> 404 Page Not Found --> public
+ERROR - 2011-09-28 14:30:35 --> 404 Page Not Found --> public
+ERROR - 2011-09-28 14:30:35 --> 404 Page Not Found --> library
+ERROR - 2011-09-28 14:34:21 --> 404 Page Not Found --> public
+ERROR - 2011-09-28 14:34:21 --> 404 Page Not Found --> library
+ERROR - 2011-09-28 14:34:37 --> Severity: Notice  --> Undefined variable: status C:\AppServ\www\dss_trevaling\cms\application\views\login.php 20
+ERROR - 2011-09-28 14:34:37 --> 404 Page Not Found --> public
+ERROR - 2011-09-28 14:34:40 --> 404 Page Not Found --> public
+ERROR - 2011-09-28 14:34:40 --> 404 Page Not Found --> library
+ERROR - 2011-09-28 14:35:11 --> 404 Page Not Found --> public
+ERROR - 2011-09-28 14:35:11 --> 404 Page Not Found --> library
+ERROR - 2011-09-28 14:35:13 --> 404 Page Not Found --> public
+ERROR - 2011-09-28 14:35:13 --> 404 Page Not Found --> library
+ERROR - 2011-09-28 14:38:02 --> 404 Page Not Found --> public
+ERROR - 2011-09-28 14:38:02 --> 404 Page Not Found --> library
+ERROR - 2011-09-28 14:38:28 --> 404 Page Not Found --> public
+ERROR - 2011-09-28 14:38:28 --> 404 Page Not Found --> library
+ERROR - 2011-09-28 14:38:47 --> 404 Page Not Found --> public
+ERROR - 2011-09-28 14:38:47 --> 404 Page Not Found --> library
+ERROR - 2011-09-28 14:40:00 --> 404 Page Not Found --> public
+ERROR - 2011-09-28 14:40:00 --> 404 Page Not Found --> library
+ERROR - 2011-09-28 14:41:11 --> 404 Page Not Found --> public
+ERROR - 2011-09-28 14:41:11 --> 404 Page Not Found --> library
+ERROR - 2011-09-28 15:14:07 --> 404 Page Not Found --> public
+ERROR - 2011-09-28 15:14:08 --> 404 Page Not Found --> library
+ERROR - 2011-09-28 15:41:15 --> 404 Page Not Found --> public
+ERROR - 2011-09-28 15:41:15 --> 404 Page Not Found --> library
+ERROR - 2011-09-28 15:42:23 --> 404 Page Not Found --> public
+ERROR - 2011-09-28 15:42:23 --> 404 Page Not Found --> library
+ERROR - 2011-09-28 15:42:25 --> 404 Page Not Found --> public
+ERROR - 2011-09-28 15:42:25 --> 404 Page Not Found --> library
+ERROR - 2011-09-28 15:44:28 --> 404 Page Not Found --> public
+ERROR - 2011-09-28 15:44:28 --> 404 Page Not Found --> library
+ERROR - 2011-09-28 15:45:01 --> 404 Page Not Found --> public
+ERROR - 2011-09-28 15:45:01 --> 404 Page Not Found --> library
+ERROR - 2011-09-28 15:46:24 --> 404 Page Not Found --> public
+ERROR - 2011-09-28 15:46:24 --> 404 Page Not Found --> library
+ERROR - 2011-09-28 16:10:31 --> Query error: Table 'travel.product' doesn't exist
+ERROR - 2011-09-28 16:11:29 --> 404 Page Not Found --> public
+ERROR - 2011-09-28 16:11:29 --> 404 Page Not Found --> library
+ERROR - 2011-09-28 16:13:04 --> 404 Page Not Found --> public
+ERROR - 2011-09-28 16:13:05 --> 404 Page Not Found --> library
+ERROR - 2011-09-28 16:21:59 --> 404 Page Not Found --> public
+ERROR - 2011-09-28 16:21:59 --> 404 Page Not Found --> library
+ERROR - 2011-09-28 16:22:02 --> Query error: Table 'travel.product' doesn't exist
+ERROR - 2011-09-28 16:22:20 --> 404 Page Not Found --> public
+ERROR - 2011-09-28 16:22:20 --> 404 Page Not Found --> library
+ERROR - 2011-09-28 16:22:23 --> Query error: Unknown column '20' in 'where clause'
+ERROR - 2011-09-28 16:23:08 --> 404 Page Not Found --> public
+ERROR - 2011-09-28 16:23:08 --> 404 Page Not Found --> library
+ERROR - 2011-09-28 16:23:10 --> 404 Page Not Found --> public
+ERROR - 2011-09-28 16:23:10 --> 404 Page Not Found --> library
+ERROR - 2011-09-28 16:23:11 --> 404 Page Not Found --> public
+ERROR - 2011-09-28 16:23:11 --> 404 Page Not Found --> library
+ERROR - 2011-09-28 16:23:13 --> 404 Page Not Found --> public
+ERROR - 2011-09-28 16:23:13 --> 404 Page Not Found --> library
+ERROR - 2011-09-28 16:23:16 --> 404 Page Not Found --> public
+ERROR - 2011-09-28 16:23:16 --> 404 Page Not Found --> library
+ERROR - 2011-09-28 16:23:21 --> 404 Page Not Found --> public
+ERROR - 2011-09-28 16:23:22 --> 404 Page Not Found --> library
+ERROR - 2011-09-28 16:24:31 --> 404 Page Not Found --> public
+ERROR - 2011-09-28 16:24:31 --> 404 Page Not Found --> library
+ERROR - 2011-09-28 16:24:37 --> 404 Page Not Found --> public
+ERROR - 2011-09-28 16:24:37 --> 404 Page Not Found --> library
+ERROR - 2011-09-28 16:24:46 --> 404 Page Not Found --> public
+ERROR - 2011-09-28 16:24:46 --> 404 Page Not Found --> library
+ERROR - 2011-09-28 16:28:05 --> 404 Page Not Found --> public
+ERROR - 2011-09-28 16:28:05 --> 404 Page Not Found --> library
+ERROR - 2011-09-28 16:28:17 --> 404 Page Not Found --> public
+ERROR - 2011-09-28 16:28:17 --> 404 Page Not Found --> library
+ERROR - 2011-09-28 16:28:24 --> 404 Page Not Found --> public
+ERROR - 2011-09-28 16:28:25 --> 404 Page Not Found --> library
+ERROR - 2011-09-28 16:30:24 --> 404 Page Not Found --> public
+ERROR - 2011-09-28 16:30:24 --> 404 Page Not Found --> library
+ERROR - 2011-09-28 16:30:27 --> 404 Page Not Found --> public
+ERROR - 2011-09-28 16:30:27 --> 404 Page Not Found --> library
+ERROR - 2011-09-28 16:30:57 --> 404 Page Not Found --> public
+ERROR - 2011-09-28 16:30:57 --> 404 Page Not Found --> library
+ERROR - 2011-09-28 16:33:30 --> 404 Page Not Found --> public
+ERROR - 2011-09-28 16:33:30 --> 404 Page Not Found --> library
+ERROR - 2011-09-28 16:33:34 --> 404 Page Not Found --> public
+ERROR - 2011-09-28 16:33:34 --> 404 Page Not Found --> library
+ERROR - 2011-09-28 16:33:36 --> 404 Page Not Found --> public
+ERROR - 2011-09-28 16:33:36 --> 404 Page Not Found --> library
+ERROR - 2011-09-28 16:33:55 --> 404 Page Not Found --> public
+ERROR - 2011-09-28 16:33:55 --> 404 Page Not Found --> library
+ERROR - 2011-09-28 16:33:57 --> 404 Page Not Found --> public
+ERROR - 2011-09-28 16:33:57 --> 404 Page Not Found --> library
+ERROR - 2011-09-28 16:35:09 --> 404 Page Not Found --> public
+ERROR - 2011-09-28 16:35:09 --> 404 Page Not Found --> library
+ERROR - 2011-09-28 17:01:07 --> 404 Page Not Found --> public
+ERROR - 2011-09-28 17:01:07 --> 404 Page Not Found --> library
+ERROR - 2011-09-28 17:01:32 --> 404 Page Not Found --> public
+ERROR - 2011-09-28 17:01:33 --> 404 Page Not Found --> library
+ERROR - 2011-09-28 17:02:06 --> 404 Page Not Found --> public
+ERROR - 2011-09-28 17:02:06 --> 404 Page Not Found --> library
+ERROR - 2011-09-28 17:02:24 --> 404 Page Not Found --> public
+ERROR - 2011-09-28 17:02:24 --> 404 Page Not Found --> library
+ERROR - 2011-09-28 17:03:29 --> 404 Page Not Found --> public
+ERROR - 2011-09-28 17:03:30 --> 404 Page Not Found --> library
+ERROR - 2011-09-28 17:09:03 --> 404 Page Not Found --> public
+ERROR - 2011-09-28 17:09:03 --> 404 Page Not Found --> library
+ERROR - 2011-09-28 22:26:57 --> Unable to select database: travel

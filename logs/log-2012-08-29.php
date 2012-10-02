@@ -1,0 +1,53 @@
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed'); ?>
+
+ERROR - 2012-08-29 00:05:01 --> 404 Page Not Found --> public
+ERROR - 2012-08-29 00:08:06 --> 404 Page Not Found --> public
+ERROR - 2012-08-29 00:08:11 --> 404 Page Not Found --> public
+ERROR - 2012-08-29 00:08:27 --> 404 Page Not Found --> home/login
+ERROR - 2012-08-29 00:14:34 --> 404 Page Not Found --> public
+ERROR - 2012-08-29 00:14:58 --> 404 Page Not Found --> public
+ERROR - 2012-08-29 00:15:48 --> 404 Page Not Found --> public
+ERROR - 2012-08-29 00:28:55 --> 404 Page Not Found --> public
+ERROR - 2012-08-29 00:28:55 --> 404 Page Not Found --> public
+ERROR - 2012-08-29 00:28:55 --> 404 Page Not Found --> public
+ERROR - 2012-08-29 00:28:55 --> 404 Page Not Found --> public
+ERROR - 2012-08-29 00:28:55 --> 404 Page Not Found --> public
+ERROR - 2012-08-29 00:29:03 --> 404 Page Not Found --> public
+ERROR - 2012-08-29 00:29:09 --> 404 Page Not Found --> public
+ERROR - 2012-08-29 00:29:47 --> 404 Page Not Found --> public
+ERROR - 2012-08-29 00:29:49 --> 404 Page Not Found --> public
+ERROR - 2012-08-29 00:30:18 --> 404 Page Not Found --> public
+ERROR - 2012-08-29 00:30:22 --> Severity: Notice  --> Undefined property: Home::$Login_model C:\AppServ\www\retrieval\application\controllers\home.php 99
+ERROR - 2012-08-29 00:30:22 --> 404 Page Not Found --> public
+ERROR - 2012-08-29 00:30:38 --> 404 Page Not Found --> public
+ERROR - 2012-08-29 00:31:13 --> 404 Page Not Found --> public
+ERROR - 2012-08-29 00:34:03 --> 404 Page Not Found --> public
+ERROR - 2012-08-29 00:34:06 --> 404 Page Not Found --> public
+ERROR - 2012-08-29 00:35:23 --> 404 Page Not Found --> public
+ERROR - 2012-08-29 00:35:33 --> 404 Page Not Found --> public
+ERROR - 2012-08-29 00:36:02 --> 404 Page Not Found --> public
+ERROR - 2012-08-29 00:36:07 --> 404 Page Not Found --> public
+ERROR - 2012-08-29 00:36:14 --> 404 Page Not Found --> public
+ERROR - 2012-08-29 00:39:42 --> Severity: Notice  --> Undefined property: Home::$Login_model C:\AppServ\www\retrieval\application\controllers\home.php 99
+ERROR - 2012-08-29 00:41:02 --> Severity: Notice  --> Undefined property: Home::$Login_model C:\AppServ\www\retrieval\application\controllers\home.php 101
+ERROR - 2012-08-29 01:01:43 --> 404 Page Not Found --> public
+ERROR - 2012-08-29 01:01:45 --> 404 Page Not Found --> public
+ERROR - 2012-08-29 01:01:49 --> 404 Page Not Found --> public
+ERROR - 2012-08-29 01:01:49 --> 404 Page Not Found --> public
+ERROR - 2012-08-29 01:02:10 --> 404 Page Not Found --> public
+ERROR - 2012-08-29 01:02:11 --> 404 Page Not Found --> public
+ERROR - 2012-08-29 01:02:11 --> 404 Page Not Found --> public
+ERROR - 2012-08-29 01:02:31 --> 404 Page Not Found --> public
+ERROR - 2012-08-29 01:02:52 --> 404 Page Not Found --> public
+ERROR - 2012-08-29 01:02:53 --> 404 Page Not Found --> public
+ERROR - 2012-08-29 01:02:53 --> 404 Page Not Found --> public
+ERROR - 2012-08-29 01:03:11 --> 404 Page Not Found --> public
+ERROR - 2012-08-29 01:19:43 --> 404 Page Not Found --> login
+ERROR - 2012-08-29 01:19:43 --> 404 Page Not Found --> login
+ERROR - 2012-08-29 01:20:34 --> 404 Page Not Found --> loginuser
+ERROR - 2012-08-29 01:20:35 --> 404 Page Not Found --> loginuser
+ERROR - 2012-08-29 12:48:57 --> 404 Page Not Found --> XDEBUG_SESSION_START
+ERROR - 2012-08-29 14:27:40 --> 404 Page Not Found --> blank.gif
+ERROR - 2012-08-29 14:32:12 --> 404 Page Not Found --> blank.gif
+ERROR - 2012-08-29 14:33:00 --> 404 Page Not Found --> blank.gif
+ERROR - 2012-08-29 14:37:30 --> 404 Page Not Found --> blank.gif

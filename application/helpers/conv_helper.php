@@ -1,0 +1,39 @@
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+/* Extended date helper */
+function conv_type($text=null)
+{   
+    if($text=="car"):
+        $textConv = "การเดินทางโดยรถยนต์ส่วนตัว";
+    elseif($text=="bus"):
+        $textConv = "การเดินทางโดยรถโดยสารประจำทาง";
+    else:
+        $textConv = "การเดินทางโดยรถไฟ";
+    endif;
+    
+    return $textConv;
+}
+function text_thaidate($strDate=null, $time=true, $full=false)
+{
+	if($strDate!=null)
+		$date = strtotime($strDate);
+	else
+		$date = time();
+
+	if($full)
+		$strMonth = array('','มกราคม','กุมภาพันธ์','มีนาคม','เมษายน','พฤษภาคม','มิถุนายน','กรกฎาคม','สิงหาคม','กันยายน','ตุลาคม','พฤศจิกายน','ธันวาคม');
+	else
+		$strMonth = array('','ม.ค.','ก.พ.','ม.ค.','เม.ย.','พ.ค.','มิ.ย.','ก.ค.','ส.ค.','ก.ย.','ต.ค.','พ.ย.','ธ.ค.');
+
+	$strDay = date('j', $date);
+	$month = date('n', $date);
+	$strYear = date('Y', $date) + 543;
+
+	$textDate = $strDay.' '.$strMonth[$month].' '.$strYear;
+
+	if($time)
+		$textDate .= date(' H:i', $date);
+
+	return $textDate;
+}
+/* End of file DA_date_helper.php */
+/* Location: ./system/helpers/DA_date_helper.php */

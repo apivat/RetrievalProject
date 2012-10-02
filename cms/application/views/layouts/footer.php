@@ -1,0 +1,1 @@
+Copyright&copy; 2012 by Pimchanok Piluk No.0000000000 &nbsp;

@@ -1,0 +1,103 @@
+.title_link a:link {color:#666666; font-weight:normal; text-decoration:none;}   
+
+.title_link a:visited {color:#666666; font-weight:normal; text-decoration:none;} 
+
+.title_link a:hover {color:#4D90FE; font-weight:normal; text-decoration:none;}  
+
+.title_link a:active {color:#666666; font-weight:normal; text-decoration:none;}
+
+a:link {color:#FFFFFF; font-weight:normal; text-decoration:none;}   
+
+a:visited {color:#FFFFFF; font-weight:normal; text-decoration:none;} 
+
+a:hover {color:#4787ED; font-weight:normal; text-decoration:none;}  
+
+a:active {color:#FFFFFF; font-weight:normal; text-decoration:none;} 
+
+#box-register{
+    background: none repeat scroll 0 0 #EFF1F1;
+    border: 1px solid #E5E5E5;
+    color: #999999;
+    height: 520px;
+    padding: 20px;
+    position: relative;
+    text-align: left;
+    top: 30px;
+    width: 680px;
+    border-radius: 10px;
+    -moz-box-shadow:5px 5px 5px #ccc;
+    -webkit-box-shadow: 5px 5px 5px #888888;
+    box-shadow: 5px 5px 5px #888888;
+}
+.font-topic{
+    font-size: 15px;
+    font-weight: bold;
+    color: #205F7E;
+}
+.box-field-regis{
+    width: 550px;
+    margin-top: 15px;
+    margin-left: 10px
+}
+.box-button-regis{
+    text-align: center;
+    width: 550px;
+    margin-top: 20px;
+    margin-left: 10px
+}
+.label-field-regis{
+    float: left;
+    margin-right: 10px;
+    width: 150px; 
+    margin-top: 5px;
+    font-weight: bold;
+    color:#000
+}
+.input-field-regis{
+    width: 350px;
+    background: none repeat scroll 0 0 #FBFBFB; 
+    border: 1px solid #CCCCCC;
+    padding: 6px;
+}
+.input-select-regis{
+    width:364px;
+    color:#000;
+    border: 1px solid #CCCCCC;
+    padding: 4px;
+}
+#gbqfbwa .gbqfba {
+  margin:16px 8px;
+}
+
+.gbqfba {
+  background-color:#F5F5F5;
+  background-image:-webkit-linear-gradient(top, #F5F5F5, #F1F1F1);
+}
+
+.gbqfba, .gbqfbb {
+  border:1px solid rgba(0, 0, 0, 0.0976563);
+  color:#444444 !important;
+  font-size:11px;
+}
+
+.gbqfb::-moz-focus-inner, .gbqfba::-moz-focus-inner, .gbqfbb::-moz-focus-inner {
+  border:0;
+}
+
+.gbqfb, .gbqfba, .gbqfbb {
+  -webkit-user-select:none;
+  border-bottom-left-radius:2px;
+  border-bottom-right-radius:2px;
+  border-top-left-radius:2px;
+  border-top-right-radius:2px;
+  cursor: pointer;
+  display:inline-block;
+  font-weight:bold;
+  height:29px;
+  line-height:29px;
+  min-width:120px;
+  padding:0 8px;
+  text-align:center;
+  text-decoration:none !important;
+  margin-top: 25px;
+}

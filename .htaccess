@@ -1,0 +1,25 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} -s [OR]
+    RewriteCond %{REQUEST_FILENAME} -l [OR]
+    RewriteCond %{REQUEST_FILENAME} -d
+    RewriteRule ^.*$ - [NC,L]
+    #RewriteRule ^.*$ index.php [NC,L]
+
+    RewriteCond $1 !^(index\.php|images|robots\.txt)
+    RewriteRule ^(.*)$ index.php/$1 [L]
+
+    # PHP settings
+    php_flag magic_quotes_gpc off
+    php_flag register_globals off
+    php_flag short_open_tag on
+    php_value upload_max_filesize 200M
+    php_value post_max_size 200M
+    php_value max_execution_time 5000
+    php_value max_input_time 5000
+</IfModule>
+
+<IfModule !mod_rewrite.c>
+    ErrorDocument 404 /index.php
+</IfModule>
+

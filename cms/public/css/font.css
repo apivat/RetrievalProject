@@ -1,0 +1,39 @@
+.heading {
+    font-size: 20px;
+    color: #fff;
+}
+.descript {
+    font-size: 12px;
+    color: #666;
+}
+.warning {
+    font-size: 10px;
+}
+.limit-text {
+    color:#fff;
+}
+
+a:link, a:visited{color:#000;text-decoration:none;}
+a:hover{color:#C60;text-decoration:none;}
+
+a.Lglay:link, a.Lglay:visited{color:#FFF;text-decoration:none;}
+a.Lglay:hover{color:#FFF;text-decoration:underline;}
+
+a.Lwhite:link, a.Lwhite:visited{color:#FFF;text-decoration:none;}
+a.Lwhite:hover{color:#FFF;text-decoration:underline;}
+
+a.Lblue:link, a.Lblue:visited{font-weight:bold;color:#205f7e;text-decoration:none;}
+a.Lblue:hover{color:#C60;text-decoration:none;}
+
+a.LblueS:link, a.LblueS:visited{color:#205f7e;text-decoration:none;}
+a.LblueS:hover{color:#C60;text-decoration:none;}
+
+
+a.link-violet:link, a.link-violet:visited{color: #609;text-decoration:none;}
+a.link-violet:hover{color:#CCC;text-decoration:none;}
+
+.green12 {color:#090;}
+.red14 {font-size:14px;color:#900;}
+.black18 {font-size:14px;}
+.blue12 {color:#205f7e;}
+.blue12-hello {color:#FFF;}

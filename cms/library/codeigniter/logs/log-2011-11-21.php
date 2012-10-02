@@ -1,0 +1,64 @@
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed'); ?>
+
+ERROR - 2011-11-21 11:05:57 --> Severity: Notice  --> Undefined variable: status C:\AppServ\www\dss_traveling\cms\application\views\login.php 21
+ERROR - 2011-11-21 11:05:57 --> 404 Page Not Found --> public
+ERROR - 2011-11-21 11:05:57 --> 404 Page Not Found --> public
+ERROR - 2011-11-21 11:06:05 --> 404 Page Not Found --> public
+ERROR - 2011-11-21 11:06:05 --> 404 Page Not Found --> public
+ERROR - 2011-11-21 11:06:08 --> 404 Page Not Found --> public
+ERROR - 2011-11-21 11:12:24 --> Severity: Notice  --> Undefined variable: status C:\AppServ\www\dss_traveling\cms\application\views\login.php 21
+ERROR - 2011-11-21 11:12:24 --> 404 Page Not Found --> public
+ERROR - 2011-11-21 11:12:24 --> 404 Page Not Found --> public
+ERROR - 2011-11-21 11:12:28 --> 404 Page Not Found --> public
+ERROR - 2011-11-21 11:18:48 --> 404 Page Not Found --> public
+ERROR - 2011-11-21 11:18:49 --> 404 Page Not Found --> public
+ERROR - 2011-11-21 11:18:54 --> 404 Page Not Found --> public
+ERROR - 2011-11-21 11:19:05 --> 404 Page Not Found --> public
+ERROR - 2011-11-21 11:19:06 --> 404 Page Not Found --> public
+ERROR - 2011-11-21 11:34:45 --> 404 Page Not Found --> public
+ERROR - 2011-11-21 11:34:48 --> 404 Page Not Found --> public
+ERROR - 2011-11-21 11:58:05 --> Severity: Notice  --> Undefined variable: result_tourist C:\AppServ\www\dss_traveling\cms\application\views\travel_by\addcar.php 15
+ERROR - 2011-11-21 11:58:05 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\AppServ\www\dss_traveling\cms\application\views\travel_by\addcar.php 15
+ERROR - 2011-11-21 11:58:05 --> 404 Page Not Found --> public
+ERROR - 2011-11-21 11:58:57 --> 404 Page Not Found --> public
+ERROR - 2011-11-21 11:59:48 --> 404 Page Not Found --> public
+ERROR - 2011-11-21 12:05:00 --> 404 Page Not Found --> public
+ERROR - 2011-11-21 12:18:03 --> 404 Page Not Found --> public
+ERROR - 2011-11-21 12:20:37 --> 404 Page Not Found --> public
+ERROR - 2011-11-21 12:23:46 --> 404 Page Not Found --> public
+ERROR - 2011-11-21 13:28:58 --> 404 Page Not Found --> public
+ERROR - 2011-11-21 13:44:01 --> 404 Page Not Found --> public
+ERROR - 2011-11-21 14:23:44 --> 404 Page Not Found --> public
+ERROR - 2011-11-21 14:23:48 --> 404 Page Not Found --> public
+ERROR - 2011-11-21 14:33:45 --> 404 Page Not Found --> public
+ERROR - 2011-11-21 14:34:52 --> 404 Page Not Found --> public
+ERROR - 2011-11-21 14:35:20 --> 404 Page Not Found --> tourist_attraction/test
+ERROR - 2011-11-21 14:35:26 --> 404 Page Not Found --> public
+ERROR - 2011-11-21 14:36:52 --> 404 Page Not Found --> public
+ERROR - 2011-11-21 14:37:29 --> 404 Page Not Found --> public
+ERROR - 2011-11-21 14:37:45 --> 404 Page Not Found --> public
+ERROR - 2011-11-21 14:42:46 --> 404 Page Not Found --> public
+ERROR - 2011-11-21 14:43:41 --> 404 Page Not Found --> public
+ERROR - 2011-11-21 15:30:32 --> 404 Page Not Found --> public
+ERROR - 2011-11-21 15:32:44 --> 404 Page Not Found --> public
+ERROR - 2011-11-21 15:33:25 --> 404 Page Not Found --> public
+ERROR - 2011-11-21 15:34:25 --> 404 Page Not Found --> public
+ERROR - 2011-11-21 15:36:39 --> 404 Page Not Found --> public
+ERROR - 2011-11-21 15:48:15 --> 404 Page Not Found --> public
+ERROR - 2011-11-21 15:49:04 --> 404 Page Not Found --> public
+ERROR - 2011-11-21 15:49:13 --> 404 Page Not Found --> public
+ERROR - 2011-11-21 15:49:37 --> 404 Page Not Found --> public
+ERROR - 2011-11-21 15:49:38 --> 404 Page Not Found --> public
+ERROR - 2011-11-21 15:52:20 --> 404 Page Not Found --> public
+ERROR - 2011-11-21 15:53:59 --> 404 Page Not Found --> public
+ERROR - 2011-11-21 15:55:15 --> 404 Page Not Found --> public
+ERROR - 2011-11-21 15:57:26 --> 404 Page Not Found --> public
+ERROR - 2011-11-21 15:59:33 --> 404 Page Not Found --> public
+ERROR - 2011-11-21 16:00:01 --> 404 Page Not Found --> public
+ERROR - 2011-11-21 16:05:01 --> 404 Page Not Found --> public
+ERROR - 2011-11-21 16:06:52 --> 404 Page Not Found --> public
+ERROR - 2011-11-21 16:09:23 --> 404 Page Not Found --> public
+ERROR - 2011-11-21 16:28:35 --> 404 Page Not Found --> public
+ERROR - 2011-11-21 16:29:54 --> 404 Page Not Found --> public
+ERROR - 2011-11-21 16:37:12 --> 404 Page Not Found --> public
+ERROR - 2011-11-21 16:39:21 --> 404 Page Not Found --> public

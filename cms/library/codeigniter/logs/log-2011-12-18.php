@@ -1,0 +1,41 @@
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed'); ?>
+
+ERROR - 2011-12-18 11:32:34 --> Severity: Notice  --> Undefined variable: status C:\AppServ\www\dss_traveling\cms\application\views\login.php 21
+ERROR - 2011-12-18 11:32:34 --> 404 Page Not Found --> public
+ERROR - 2011-12-18 11:32:35 --> 404 Page Not Found --> public
+ERROR - 2011-12-18 11:34:27 --> 404 Page Not Found --> public
+ERROR - 2011-12-18 11:34:45 --> 404 Page Not Found --> public
+ERROR - 2011-12-18 11:34:58 --> 404 Page Not Found --> public
+ERROR - 2011-12-18 11:36:37 --> 404 Page Not Found --> public
+ERROR - 2011-12-18 11:40:02 --> 404 Page Not Found --> public
+ERROR - 2011-12-18 11:42:36 --> 404 Page Not Found --> public
+ERROR - 2011-12-18 11:43:00 --> 404 Page Not Found --> public
+ERROR - 2011-12-18 11:43:13 --> 404 Page Not Found --> public
+ERROR - 2011-12-18 11:43:24 --> 404 Page Not Found --> public
+ERROR - 2011-12-18 11:45:51 --> 404 Page Not Found --> public
+ERROR - 2011-12-18 11:46:00 --> 404 Page Not Found --> public
+ERROR - 2011-12-18 11:46:53 --> 404 Page Not Found --> public
+ERROR - 2011-12-18 12:04:16 --> 404 Page Not Found --> public
+ERROR - 2011-12-18 12:04:37 --> 404 Page Not Found --> public
+ERROR - 2011-12-18 12:05:27 --> 404 Page Not Found --> public
+ERROR - 2011-12-18 12:06:55 --> 404 Page Not Found --> public
+ERROR - 2011-12-18 12:09:37 --> 404 Page Not Found --> public
+ERROR - 2011-12-18 12:21:55 --> 404 Page Not Found --> public
+ERROR - 2011-12-18 12:21:59 --> 404 Page Not Found --> public
+ERROR - 2011-12-18 12:22:19 --> 404 Page Not Found --> public
+ERROR - 2011-12-18 12:26:38 --> 404 Page Not Found --> public
+ERROR - 2011-12-18 12:28:18 --> 404 Page Not Found --> public
+ERROR - 2011-12-18 12:30:43 --> Severity: Notice  --> Undefined variable: yyy C:\AppServ\www\dss_traveling\cms\application\controllers\travel_by.php 81
+ERROR - 2011-12-18 12:30:43 --> 404 Page Not Found --> public
+ERROR - 2011-12-18 12:31:00 --> 404 Page Not Found --> public
+ERROR - 2011-12-18 12:38:17 --> 404 Page Not Found --> public
+ERROR - 2011-12-18 12:38:19 --> 404 Page Not Found --> public
+ERROR - 2011-12-18 12:39:15 --> 404 Page Not Found --> public
+ERROR - 2011-12-18 12:39:31 --> 404 Page Not Found --> public
+ERROR - 2011-12-18 12:39:33 --> 404 Page Not Found --> public
+ERROR - 2011-12-18 12:39:46 --> 404 Page Not Found --> public
+ERROR - 2011-12-18 12:40:02 --> 404 Page Not Found --> public
+ERROR - 2011-12-18 12:40:05 --> 404 Page Not Found --> public
+ERROR - 2011-12-18 12:40:16 --> 404 Page Not Found --> public
+ERROR - 2011-12-18 12:41:14 --> 404 Page Not Found --> public
+ERROR - 2011-12-18 12:42:30 --> 404 Page Not Found --> public

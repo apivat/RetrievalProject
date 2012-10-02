@@ -1,0 +1,126 @@
+<script type="text/javascript">
+    function checkFields()
+    {
+        missinginfo = "";
+        if(document.frmCms.user_username.value == "")
+        {
+            missinginfo += "\n - กรุณากรอก Username";
+        }
+        
+        if(document.frmCms.user_password.value == ""){
+            missinginfo += "\n - กรุณากรอก Password";
+        }else if(document.frmCms.user_password.value.length < 7){
+            missinginfo += "\n - กรุณากรอก Password 7 ตัว ขึ้นไป";     
+        }else if(document.frmCms.user_password.value.match(/[^\\d]/)){
+            missinginfo += "\n - กรุณากรอก Password เฉพาะตัวเลขเท่านั้น"; 
+        }else if(document.frmCms.user_password.value != document.frmCms.user_password_confirm.value){
+            missinginfo += "\n - กรุณากรอก Confirm Password ให้ตรงกับ Password"; 
+        }
+        
+        if(document.frmCms.user_name.value == "")
+        {
+            missinginfo += "\n - กรุณากรอกชื่อ-นามสกุล";
+        }
+        
+        if(document.frmCms.user_tel.value == ""){
+            missinginfo += "\n - กรุณากรอกหมายเลขโทรศัพท์ติดต่อ";
+        }else if(document.frmCms.user_tel.value.length < 10){
+            missinginfo += "\n - กรุณากรอกหมายเลขโทรศัพท์จำนวน 10 ตัว";     
+        }else if(document.frmCms.user_tel.value.match(/[^\\d]/)){
+            missinginfo += "\n - กรุณากรอกหมายเลขโทรศัพท์เฉพาะตัวเลขเท่านั้น"; 
+        }
+        
+        
+        if(document.frmCms.user_postion.value == "")
+        {
+            missinginfo += "\n - กรุณากรอก user postion";
+        }
+        if(document.frmCms.dep_id.value == "")
+        {
+            missinginfo += "\n - กรุณาเลือก Department";
+        }
+        
+        var regex_email=/^[_a-zA-Z0-9-]+(\.[_a-zA-Z0-9-]+)*\@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*(\.([a-zA-Z]){2,4})$/
+        if(document.frmCms.user_email.value == ""){
+            missinginfo += "\n - กรุณากรอกอีเมล";
+        }else if(!document.frmCms.user_email.value.match(regex_email)){
+            missinginfo += "\n - กรุณากรอกอีเมลให้ถูกต้อง";
+        }
+        
+        if(document.frmCms.isdownload.value == "")
+        {
+            missinginfo += "\n - กรุณาเลือกสิทธิ์การดาวน์โหลด";
+        }
+        if(document.frmCms.user_status.value == "")
+        {
+            missinginfo += "\n - กรุณาเลือกสถานะ";
+        }
+        if (missinginfo != "")
+        {
+            missinginfo ="ข้อมูลต่อไปนี้ผิดพลาด :\n" +
+                "_____________________________\n" +
+                missinginfo + "\n_____________________________";
+            alert(missinginfo);
+            return false;
+        }
+        else
+        {
+            return true;
+        }
+    }
+</script>
+<?php if (isset($error)): ?>
+    <div class="box-error"><b><?= $error ?></b></div>
+<?php endif; ?>
+
+<div class="block-status-lavel2">
+    <div class="status-lavel2"><img src="<?= base_url() ?>public/img/icon/<?= $imgTitle ?>" align="absmiddle" />&nbsp;&nbsp;<?= $txtTitle ?></div>
+</div>
+
+<form name="frmCms" id="frmCms" method="post" action="" onSubmit="JavaScript:return checkFields();">
+    <dl>
+        <dt>Username :</dt>
+        <dd><input type="text" name="user_username" id="user_username" class="cms-thumb" /></dd>
+        <dt>Password :</dt>
+        <dd><input type="text" name="user_password" id="user_password" class="cms-thumb" /></dd>
+        <dt>Confirm Password :</dt>
+        <dd><input type="text" name="user_password_confirm" id="user_password_confirm" class="cms-thumb" /></dd>
+        <dt>&nbsp;</dt>
+        <dd>&nbsp;</dd>
+        <dt>ชื่อ-นามสกุล :</dt>
+        <dd><input type="text" name="user_name" id="user_name" class="cms-thumb" /></dd>
+        <dt>หมายเลขโทรศัพท์ติดต่อ :</dt>
+        <dd><input type="text" name="user_tel" id="user_tel" class="cms-thumb" /></dd>
+        <dt>user_postion :</dt>
+        <dd><input type="text" name="user_postion" id="user_postion" class="cms-thumb" /></dd>
+        <dt>Department :</dt>
+        <dd>
+        <select class="properties" name="dep_id" id="dep_id">
+            <option value="">----------------กรุณาเลือก----------------</option>
+            <?php foreach ($result_dep as $dep): ?>
+                <option value="<?= $dep->dep_id ?>"><?= $dep->dep_name ?></option>
+            <?php endforeach; ?>
+        </select>
+        </dd>
+        <dt>อีเมล :</dt>
+        <dd><input type="text" name="user_email" id="user_email" class="cms-thumb" /></dd>
+        <dt>สิทธิ์การดาวน์โหลด :</dt>
+        <dd>
+        <select class="properties" name="isdownload" id="isdownload">
+            <option value="">----------------กรุณาเลือก----------------</option>
+            <option value="1">Yes</option>
+            <option value="0">ReadOnly</option>
+        </select>    
+        </dd>
+        <dt>สถานะ :</dt>
+        <dd>
+        <select class="properties" name="user_status" id="user_status">
+            <option value="">----------------กรุณาเลือก----------------</option>
+            <option value="1">Open</option>
+            <option value="0">Close</option>
+        </select>
+        </dd>
+        <dt>&nbsp;</dt>
+        <dd style="margin-top: 10px;"><input type="submit" class="bt" value="เพิ่มข้อมูล" /></dd>
+    </dl>
+</form>
