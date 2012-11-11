@@ -40,10 +40,10 @@
 
 <!-- Travel By -->
 <div class="nav-title-<?=($this->router->class=='report')? 'select': 'default';?>">
-	<div class="nav-text-title"><img alt="" src="<?=base_url()?>public/img/icon/application_cascade.png" /> <span class="nav-title"><a href="<?=base_url()?>report" class="Lblue">รายงาน</a></span></div>
+	<div class="nav-text-title"><img alt="" src="<?=base_url()?>public/img/icon/application_cascade.png" /> <span class="nav-title"><a href="<?=base_url()?>report/one" class="Lblue">รายงาน</a></span></div>
 	<div class="nav-icon"><img alt="" src="<?=base_url()?>public/img/icon/<?=($this->router->class=='travel_by')? 'resultset_up.png': 'resultset_down.png';?>" id="arrow4" class="nav-img-icon" onclick="changeStatus('4')" /></div>
 </div>
 <div id="nav-msg-body4" <?=($this->router->class=='report')? '': 'class=\'hide\'';?>>
-	<div class="nav-body<?=($this->router->class=='report' && $this->router->method=='one')? '-select': '';?>"><a href="<?=base_url()?>report/one" class="LblueS">รายงานที่ 1</a></div>
-        <div class="nav-body<?=($this->router->class=='report' && $this->router->method=='two')? '-select': '';?>"><a href="<?=base_url()?>report/two" class="LblueS">รายงานที่ 2</a></div>
+	<div class="nav-body<?=($this->router->class=='report' && $this->router->method=='one')? '-select': '';?>"><a href="<?=base_url()?>report/one" class="LblueS">ข้อมูลนักวิจัย</a></div>
+        <div class="nav-body<?=($this->router->class=='report' && $this->router->method=='two')? '-select': '';?>"><a href="<?=base_url()?>report/two" class="LblueS">ข้อมูลการตีพิมพ์</a></div>
 </div>

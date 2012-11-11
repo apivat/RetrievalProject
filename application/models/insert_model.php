@@ -48,6 +48,19 @@ class Insert_model extends Model {
         
         return $user_id;
     }
+    
+    function updateDownload($pub_id) {
+        $pub = $this->db->get_where('publication',array('pub_id'=>$pub_id))->row();
+        
+        $data_post = array(
+            'get_download' => ($pub->get_download+1),
+        );
+        
+        $this->db->where('pub_id',$pub_id);
+        $this->db->update('publication', $data_post);
+        
+        return $pub->pub_paper;
+    }
 
 }
 

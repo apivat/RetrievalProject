@@ -61,7 +61,7 @@
         <span style="width: 100px;font-weight: bold;font-size: 14px;">ดาวน์โหลดเอกสาร: </span>
         <spen style="width: 750px;font-size: 14px;">
         <?php if($this->session->userdata('IsDownload')==1):?>
-            <a herf="<?=base_url()."public/upload/".$result_pub->pub_paper;?>"><img style="cursor:pointer;" src="<?=base_url()?>cms/public/img/icon/folder.png" title="ดาวน์โหลด"/></a>
+            <a href="<?=base_url()."home/download/".$result_pub->pub_id;?>"><img style="cursor:pointer;" src="<?=base_url()?>cms/public/img/icon/folder.png" title="ดาวน์โหลด"/></a>
         <?php else: ?>
             คุณไม่มีสิทธิ์ดาวน์โหลด กรุณาติดต่อเจ้าหน้าที่
         <?php endif; ?>

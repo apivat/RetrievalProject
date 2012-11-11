@@ -312,4 +312,9 @@ class Home extends Controller {
         $this->load->view('layouts/layout', $data);
     }    
     
+    function download($pub_id) {    
+        $url = $this->insert_model->updateDownload($pub_id);
+        redirect(base_url()."public/upload/".$url);
+    }    
+    
 }
