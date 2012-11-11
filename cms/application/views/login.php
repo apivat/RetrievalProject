@@ -15,7 +15,7 @@
     <body onload="dojo.byId('username').focus()">
     <center>
         <div class="login-top"><span class="login-top-url"><a href="../" class="Lglay">&larr; หน้าแรกระบบสืบค้นผลงานตีพิมพ์สถาบันวิจัยจุฬาภรณ์</a></span></div>
-        <div class="login-logo"></div>
+        <div class="login-logo"><img src = "<?= base_url() ?>public/img/backend.jpg"></div>
         <br />
         <form method="post" action="">
             <?php if (@$status == 'false'): ?><div class="login-error"><b>Error:</b> Login failed.</div><?php endif; ?>

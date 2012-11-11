@@ -1473,3 +1473,77 @@ ERROR - 2012-11-11 15:25:10 --> 404 Page Not Found --> public
 ERROR - 2012-11-11 15:25:10 --> 404 Page Not Found --> public
 ERROR - 2012-11-11 15:30:21 --> 404 Page Not Found --> public
 ERROR - 2012-11-11 15:33:24 --> 404 Page Not Found --> public
+ERROR - 2012-11-11 18:18:17 --> Severity: Notice  --> Undefined variable: status C:\AppServ\www\RetrievalProject\cms\application\views\login.php 21
+ERROR - 2012-11-11 18:18:17 --> 404 Page Not Found --> public
+ERROR - 2012-11-11 18:18:17 --> 404 Page Not Found --> public
+ERROR - 2012-11-11 18:25:04 --> Severity: Notice  --> Undefined variable: status C:\AppServ\www\RetrievalProject\cms\application\views\login.php 21
+ERROR - 2012-11-11 18:25:04 --> 404 Page Not Found --> public
+ERROR - 2012-11-11 18:25:04 --> 404 Page Not Found --> public
+ERROR - 2012-11-11 18:26:07 --> Severity: Notice  --> Undefined variable: status C:\AppServ\www\RetrievalProject\cms\application\views\login.php 21
+ERROR - 2012-11-11 18:26:07 --> 404 Page Not Found --> public
+ERROR - 2012-11-11 18:26:07 --> 404 Page Not Found --> public
+ERROR - 2012-11-11 18:27:24 --> Severity: Notice  --> Undefined variable: status C:\AppServ\www\RetrievalProject\cms\application\views\login.php 21
+ERROR - 2012-11-11 18:27:24 --> 404 Page Not Found --> public
+ERROR - 2012-11-11 18:27:24 --> 404 Page Not Found --> public
+ERROR - 2012-11-11 18:27:27 --> Severity: Notice  --> Undefined variable: status C:\AppServ\www\RetrievalProject\cms\application\views\login.php 21
+ERROR - 2012-11-11 18:27:27 --> 404 Page Not Found --> public
+ERROR - 2012-11-11 18:27:27 --> 404 Page Not Found --> public
+ERROR - 2012-11-11 18:28:07 --> Severity: Notice  --> Undefined variable: status C:\AppServ\www\RetrievalProject\cms\application\views\login.php 21
+ERROR - 2012-11-11 18:28:07 --> 404 Page Not Found --> public
+ERROR - 2012-11-11 18:28:07 --> 404 Page Not Found --> public
+ERROR - 2012-11-11 18:30:09 --> Severity: Notice  --> Undefined variable: status C:\AppServ\www\RetrievalProject\cms\application\views\login.php 21
+ERROR - 2012-11-11 18:30:09 --> 404 Page Not Found --> public
+ERROR - 2012-11-11 18:30:09 --> 404 Page Not Found --> public
+ERROR - 2012-11-11 18:30:11 --> Severity: Notice  --> Undefined variable: status C:\AppServ\www\RetrievalProject\cms\application\views\login.php 21
+ERROR - 2012-11-11 18:30:11 --> 404 Page Not Found --> public
+ERROR - 2012-11-11 18:30:11 --> 404 Page Not Found --> public
+ERROR - 2012-11-11 18:30:14 --> Severity: Notice  --> Undefined variable: status C:\AppServ\www\RetrievalProject\cms\application\views\login.php 21
+ERROR - 2012-11-11 18:30:14 --> 404 Page Not Found --> public
+ERROR - 2012-11-11 18:30:14 --> 404 Page Not Found --> public
+ERROR - 2012-11-11 18:30:32 --> Severity: Notice  --> Undefined variable: status C:\AppServ\www\RetrievalProject\cms\application\views\login.php 21
+ERROR - 2012-11-11 18:30:32 --> 404 Page Not Found --> public
+ERROR - 2012-11-11 18:30:32 --> 404 Page Not Found --> public
+ERROR - 2012-11-11 18:31:04 --> Severity: Notice  --> Undefined variable: status C:\AppServ\www\RetrievalProject\cms\application\views\login.php 21
+ERROR - 2012-11-11 18:31:05 --> 404 Page Not Found --> public
+ERROR - 2012-11-11 18:31:05 --> 404 Page Not Found --> public
+ERROR - 2012-11-11 18:31:16 --> Severity: Notice  --> Undefined variable: status C:\AppServ\www\RetrievalProject\cms\application\views\login.php 21
+ERROR - 2012-11-11 18:31:16 --> 404 Page Not Found --> public
+ERROR - 2012-11-11 18:31:16 --> 404 Page Not Found --> public
+ERROR - 2012-11-11 18:31:57 --> Severity: Notice  --> Undefined variable: status C:\AppServ\www\RetrievalProject\cms\application\views\login.php 21
+ERROR - 2012-11-11 18:31:58 --> 404 Page Not Found --> public
+ERROR - 2012-11-11 18:31:58 --> 404 Page Not Found --> public
+ERROR - 2012-11-11 18:32:01 --> Severity: Notice  --> Undefined variable: status C:\AppServ\www\RetrievalProject\cms\application\views\login.php 21
+ERROR - 2012-11-11 18:32:01 --> 404 Page Not Found --> public
+ERROR - 2012-11-11 18:32:01 --> 404 Page Not Found --> public
+ERROR - 2012-11-11 18:32:04 --> Severity: Notice  --> Undefined variable: status C:\AppServ\www\RetrievalProject\cms\application\views\login.php 21
+ERROR - 2012-11-11 18:32:04 --> 404 Page Not Found --> public
+ERROR - 2012-11-11 18:32:04 --> 404 Page Not Found --> public
+ERROR - 2012-11-11 18:32:54 --> Severity: Notice  --> Undefined variable: status C:\AppServ\www\RetrievalProject\cms\application\views\login.php 21
+ERROR - 2012-11-11 18:32:55 --> 404 Page Not Found --> public
+ERROR - 2012-11-11 18:32:55 --> 404 Page Not Found --> public
+ERROR - 2012-11-11 18:33:12 --> Severity: Notice  --> Undefined variable: status C:\AppServ\www\RetrievalProject\cms\application\views\login.php 21
+ERROR - 2012-11-11 18:33:12 --> 404 Page Not Found --> public
+ERROR - 2012-11-11 18:33:12 --> 404 Page Not Found --> public
+ERROR - 2012-11-11 18:33:47 --> Severity: Notice  --> Undefined variable: status C:\AppServ\www\RetrievalProject\cms\application\views\login.php 21
+ERROR - 2012-11-11 18:33:47 --> 404 Page Not Found --> public
+ERROR - 2012-11-11 18:33:47 --> 404 Page Not Found --> public
+ERROR - 2012-11-11 18:36:36 --> Severity: Notice  --> Undefined variable: status C:\AppServ\www\RetrievalProject\cms\application\views\login.php 21
+ERROR - 2012-11-11 18:36:36 --> 404 Page Not Found --> public
+ERROR - 2012-11-11 18:36:36 --> 404 Page Not Found --> public
+ERROR - 2012-11-11 18:37:03 --> Severity: Notice  --> Undefined variable: status C:\AppServ\www\RetrievalProject\cms\application\views\login.php 21
+ERROR - 2012-11-11 18:37:03 --> 404 Page Not Found --> public
+ERROR - 2012-11-11 18:37:03 --> 404 Page Not Found --> public
+ERROR - 2012-11-11 18:37:44 --> 404 Page Not Found --> public
+ERROR - 2012-11-11 18:37:51 --> 404 Page Not Found --> public
+ERROR - 2012-11-11 18:37:57 --> 404 Page Not Found --> public
+ERROR - 2012-11-11 18:38:23 --> 404 Page Not Found --> public
+ERROR - 2012-11-11 18:38:25 --> 404 Page Not Found --> public
+ERROR - 2012-11-11 18:38:32 --> 404 Page Not Found --> public
+ERROR - 2012-11-11 18:39:46 --> 404 Page Not Found --> public
+ERROR - 2012-11-11 18:39:48 --> 404 Page Not Found --> public
+ERROR - 2012-11-11 18:40:19 --> 404 Page Not Found --> public
+ERROR - 2012-11-11 18:40:23 --> 404 Page Not Found --> public
+ERROR - 2012-11-11 18:43:36 --> 404 Page Not Found --> public
+ERROR - 2012-11-11 18:44:46 --> Severity: Notice  --> Undefined variable: status C:\AppServ\www\RetrievalProject\cms\application\views\login.php 21
+ERROR - 2012-11-11 18:44:46 --> 404 Page Not Found --> public
+ERROR - 2012-11-11 18:44:46 --> 404 Page Not Found --> public
