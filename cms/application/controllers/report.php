@@ -45,7 +45,7 @@ class Report extends Controller {
         if($print==null or $print=="2"){ 
            $config['total_rows'] = $this->db->get("researcher")->num_rows();
         }else if($print=="1" or $print=="0"){
-           $config['total_rows'] = $this->db->get_where("researcher",array("is_internal"=>$is_internal))->num_rows(); 
+           $config['total_rows'] = $this->db->get_where("researcher",array("is_internal"=>$print))->num_rows(); 
         }else{
             redirect('/');
         }
