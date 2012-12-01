@@ -1,5 +1,12 @@
-<div style="width:1020px;height: 580px; margin-top: 40px;background-color:#F0F8FF;">
-    <br/>
+<div 
+style="width:1020px;
+height: 580px; 
+margin-top: 40px;
+background-color:#F0F8FF;
+border:6px double #0054a6; 
+background-image:url('paper.gif');">
+
+     <br/>
     <div style="padding-left: 20px;width: 980px;">
         <span style="width: 100px;font-weight: bold;font-size: 14px;">ชื่อเรื่อง : </span>
         <spen style="width: 750px;font-size: 14px;"><?=$result_pub->pub_title;?></spen>
@@ -42,7 +49,8 @@
             ?>
         </spen>
     </div><br/>
-    <div style="padding-left: 20px;width: 980px;">
+	
+<!--    <div style="padding-left: 20px;width: 980px;">
         <span style="width: 100px;font-weight: bold;font-size: 14px;">เอกสารที่นำไปใช้: </span>
         <spen style="width: 750px;font-size: 14px;">
             <?php 
@@ -56,7 +64,9 @@
             endif;
             ?>
         </spen>
-    </div><br/>
+    </div><br/>-->
+	
+	
     <div style="padding-left: 20px;width: 980px;">
         <span style="width: 100px;font-weight: bold;font-size: 14px;">ดาวน์โหลดเอกสาร: </span>
         <spen style="width: 750px;font-size: 14px;">

@@ -3,7 +3,8 @@ body{
 	font-family: Tahoma;
 	font-size: 13px;
 	color: #666;
-        background: none repeat scroll 0 0 #FFFFFF;
+    background: none repeat scroll 0 0 ; /*#FFFFFF*/
+	background-image: url('bg2ia5.jpg');
 /*	background: #97cc01 url(../img/bg_website.jpg) center top no-repeat;*/
 }
 
