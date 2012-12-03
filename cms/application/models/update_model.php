@@ -28,9 +28,15 @@ class Update_model extends Model {
         $this->db->update('journal', $data_post);
     }
 
+    private function slug($str){
+        $str = preg_replace('/[^A-Za-z]/', '-', $str);
+        $str = preg_replace('/-+/', " ", $str);
+        return $str;
+    }
+    
     private function indexCreate($word,$queryCate,$pub_id) {
-        $vowels = array(",", ".","&nbsp;","?","!");
-        $pub_index_word = str_replace($vowels, "",strtolower(strip_tags($word)));
+        //$vowels = array(",", ".","&nbsp;","?","!");
+        $pub_index_word = $this->slug(strtolower(strip_tags($word)));
         $indexs = explode(" ", $pub_index_word);
         foreach ($indexs as $index) :
             // ถ้ามี Index
