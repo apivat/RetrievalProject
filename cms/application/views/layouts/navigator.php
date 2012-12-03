@@ -1,3 +1,8 @@
+<style>
+.x-border-box, .x-border-box * {
+    box-sizing:inherit;
+}
+</style>
 <div class="nav-home<?=($this->router->class=='home')? '-select': '';?>">
 	<img alt="" src="<?=base_url()?>public/img/icon/house.png" /> <span class="nav-title"><a href="<?=base_url()?>home" class="Lblue">หน้าแรก</a></span>
 </div>

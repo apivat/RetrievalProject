@@ -7,10 +7,12 @@
     <?php echo(link_tag(base_url().'public/css/style.css'))?>
     <?php echo(link_tag(base_url().'public/css/element.css'))?>
     <?php echo(link_tag(base_url().'public/css/font.css'))?>
-    <script type="text/javascript" src="<?php echo(base_url())?>library/dojo/dojo.js"></script>
-    <script type="text/javascript" src="<?php echo(base_url())?>public/js/jquery-1.7.1.min.js"></script>
-    <script type="text/javascript" src="<?php echo(base_url())?>public/js/javascript.js"></script>  
-    <script type="text/javascript" src="<?php echo(base_url())?>plugins/tinymce/jscripts/tiny_mce/tiny_mce.js"></script>
+    <?php echo(link_tag(base_url().'public/js/ext/resources/css/ext-all.css'))?>
+    <script type="text/javascript" charset="utf-8" src="<?php echo(base_url())?>library/dojo/dojo.js"></script>
+    <script type="text/javascript" charset="utf-8" src="<?php echo(base_url())?>public/js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="<?php echo(base_url())?>public/js/javascript.js"></script>  
+    <script type="text/javascript" charset="utf-8" src="<?php echo(base_url())?>plugins/tinymce/jscripts/tiny_mce/tiny_mce.js"></script>
+    <script type="text/javascript" charset="utf-8" src="<?php echo(base_url())?>public/js/ext/ext-all.js"></script>
 </head>
 <body>
 <center>
