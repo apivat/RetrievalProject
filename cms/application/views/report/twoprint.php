@@ -4,22 +4,22 @@
         </div>
     <div style="padding-top: 30px;margin-bottom: 30px;"><?= $txtTitle ?>  </div> 
     <hr/>
-    <div style="font-weight: bold;font-size: 13px;">
-        <div style="width: 5%;float: left;text-align: left">NO.</div> 
-        <div style="width: 65%;float: left;text-align: left">หัวข้อ</div>  
-        <div style="width: 10%;float: left;text-align: left">ปีที่ตีพิมพ์</div> 
-        <div style="width: 20%;float: left;text-align: left">วารสาร</div> 
+    <div style="font-weight: bold;font-size: 13px;height:25px;">
+        <div style="width: 50px;float: left;text-align: left">NO.</div> 
+        <div style="width: 600px;float: left;text-align: left">หัวข้อ</div>  
+        <div style="width: 80px;float: left;text-align: center">ปีที่ตีพิมพ์</div> 
+        <div style="width: 250px;float: left;text-align: center">วารสาร</div> 
     </div>
     <hr/>
     <?php
     $i=1;
     foreach ($result as $value):
     ?>
-    <div style="font-size: 13px;">
-        <div style="width: 5%;float: left;text-align: left"><?=$i?></div> 
-        <div style="width: 65%;float: left;text-align: left;"><?= substr($value->pub_title, 0,110); ?>...</div>  
-        <div style="width: 10%;float: left;text-align: left"><?= $value->pub_year ?></div> 
-        <div style="width: 20%;float: left;text-align: left;"><?= substr($value->journal_title, 0,30); ?>...</div> 
+    <div style="font-size: 13px;height:40px;float: left;">
+        <div style="width: 50px;float: left;text-align: left"><?=$i?></div> 
+        <div style="width: 600px;float: left;text-align: left;"><?= $value->pub_title ?></div>  
+        <div style="width: 80px;float: left;text-align: center"><?= $value->pub_year ?></div> 
+        <div style="width: 250px;float: left;text-align: left;"><?= $value->journal_title ?></div> 
     </div>
     <?php 
     $i++;
