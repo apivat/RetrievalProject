@@ -50,5 +50,5 @@
 </div>
 <div id="nav-msg-body4" <?=($this->router->class=='report')? '': 'class=\'hide\'';?>>
 	<div class="nav-body<?=($this->router->class=='report' && $this->router->method=='one')? '-select': '';?>"><a href="<?=base_url()?>report/one" class="LblueS">ข้อมูลนักวิจัย</a></div>
-        <div class="nav-body<?=($this->router->class=='report' && $this->router->method=='two')? '-select': '';?>"><a href="<?=base_url()?>report/two" class="LblueS">ข้อมูลการตีพิมพ์</a></div>
+        <div class="nav-body<?=($this->router->class=='report' && $this->router->method=='two')? '-select': '';?>"><a href="<?=base_url()?>report/two" class="LblueS">ข้อมูลผลงานตีพิมพ์</a></div>
 </div>
