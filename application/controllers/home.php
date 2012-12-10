@@ -40,6 +40,12 @@ class Home extends Controller {
         }
     }
 
+    private function slug($str){
+        $str = preg_replace('/[^A-Za-z]/', '-', $str);
+        $str = preg_replace('/-+/', " ", $str);
+        return $str;
+    }
+    
     private function get_result_search($text_word,$year_word){
         // run array stop word
         $stop_word = array();
@@ -51,8 +57,7 @@ class Home extends Controller {
 
         // ตัดคำในประโยคที่กรอกมาโดยการเว้นวรรคและปรับให้เป็นตัวเล็กกับตัว tag HTML ออก
         $keyword_input_id = array();
-        $vowels = array(",", ".","&nbsp;","?","!");
-        $pub_abstract = str_replace($vowels, "",strtolower(strip_tags($text_word)));
+        $pub_abstract = $this->slug(strtolower(strip_tags($text_word)));
         $indexs = explode(" ", $pub_abstract);
         foreach ($indexs as $index) : // loop ของคำที่เว้นวรรค
             if (!in_array($index, $stop_word)): // check stop word
@@ -116,8 +121,7 @@ class Home extends Controller {
         
         // ตัดคำในประโยคที่กรอกมาโดยการเว้นวรรคและปรับให้เป็นตัวเล็กกับตัว tag HTML ออก
         $keyword_input_id = array();
-        $vowels = array(",", ".","&nbsp;","?","!");
-        $pub_abstract = str_replace($vowels, "",strtolower(strip_tags($text_word)));
+        $pub_abstract = $this->slug(strtolower(strip_tags($text_word)));
         $indexs = explode(" ", $pub_abstract);
         foreach ($indexs as $index) : // loop ของคำที่เว้นวรรค
             if (!in_array($index, $stop_word)): // check stop word
