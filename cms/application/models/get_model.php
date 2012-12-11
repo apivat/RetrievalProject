@@ -30,6 +30,27 @@ class Get_model extends Model {
 
         return $query->result();
     }
+    
+   function getChart1() {
+       
+        $this->db->select('pub_year, count( * ) AS count_pub');
+        $this->db->from('publication');
+        $this->db->group_by('pub_year');
+        
+        $dataResult = $this->db->get();
+        return $dataResult;
+    }
+    
+    function getChart2() {
+        
+        $this->db->select("a.lab_shname as lab_shname, count( b.pub_id ) as count_pub");
+        $this->db->from("lab a");
+        $this->db->join("publication b","a.lab_id = b.lab_id","left");
+        $this->db->group_by("b.lab_id");
+                        
+        $dataResult = $this->db->get();
+        return $dataResult;
+    }
 
 }
 

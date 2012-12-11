@@ -16,5 +16,19 @@ class Home extends Controller {
 
         $this->load->view('layouts/layout', $data);
     }
+    
+    function Chart1JSON()
+    {
+        $getData = $this->get_model->getChart1()->result();
+        echo json_encode($getData);
+    }
+   
+    
+    function Chart2JSON()
+    {
+        $getData = $this->get_model->getChart2()->result();
+        echo json_encode($getData);
+    }
+    
 
 }

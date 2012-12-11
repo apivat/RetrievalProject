@@ -5,7 +5,6 @@
     <?php echo(meta(array('name'=>'Content-type','content'=>'text/html;charset=utf-8','type'=>'equiv')))?>
     <?php echo(link_tag(base_url().'public/css/layout.css'))?>
     <?php echo(link_tag(base_url().'public/css/style.css'))?>
-    <?php echo(link_tag(base_url().'public/css/element.css'))?>
     <?php echo(link_tag(base_url().'public/css/font.css'))?>
     <?php echo(link_tag(base_url().'public/js/ext/resources/css/ext-all.css'))?>
     <script type="text/javascript" charset="utf-8" src="<?php echo(base_url())?>library/dojo/dojo.js"></script>

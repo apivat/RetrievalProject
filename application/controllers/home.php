@@ -95,11 +95,11 @@ class Home extends Controller {
                         $publication_by_keyword = $this->db->where('b.key_id',$document2->key_id)->join('keyword_publication as b','a.pub_id = b.pub_id','left')->get('publication as a');
                         $log10 = number_format(log10($num_keyword/$publication_by_keyword->num_rows()),3);
                         $log_count = number_format($log10*$document2->key_doc,3);
-                        $sc = $sc+number_format($log_count*$log10,3);
+                        $sc = $sc + number_format($log_count*$log10,3);
                     endforeach;       
                     $result_sim[] = array($sc,$document->pub_id);
                 endforeach;
-
+                
                 $this->SelectionSort($result_sim,"desc");
                 return $result_sim;
             else:    
