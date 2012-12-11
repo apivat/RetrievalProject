@@ -1,7 +1,7 @@
 <div 
 style="width:1020px;
 height: 580px; 
-margin-top: 40px;
+margin-top: 20px;
 background-color:#F0F8FF;
 border:6px double #0054a6; 
 background-image:url('paper.gif');">

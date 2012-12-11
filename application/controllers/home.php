@@ -259,9 +259,17 @@ class Home extends Controller {
     
     function resultdata() {
         if (!$this->session->userdata('LoginActive')) redirect('/'); // check Login
+        $data['word'] = "";   
+        $data['recall'] = 0;
+        $data['total'] = 0;
+        $data['result_count'] = 0;
         if($_POST){
             if($this->input->post('word')){
-                $data['result_ans'] =  $this->get_result_search($this->input->post('word'),null);                   
+                $data['word'] = $this->input->post('word');
+                $data['result_ans'] =  $this->get_result_search($this->input->post('word'),null);      
+                $data['result_count'] = count($data['result_ans']);
+                $data['total'] = $this->db->get('publication')->num_rows();
+                $data['recall'] = $data['result_count']/$data['total'];
             }else{
                 redirect('/');
             }            
@@ -279,9 +287,13 @@ class Home extends Controller {
     
     function searchcondition(){
         if (!$this->session->userdata('LoginActive')) redirect('/'); // check Login
-                
+        $data['word'] = "";   
+        $data['recall'] = 0;
+        $data['total'] = 0;
+        $data['result_count'] = 0;  
         if($_POST){
             if($this->input->post('word')){
+                $data['word'] = $this->input->post('word');
                 if(!$this->input->post('type_word')&&!$this->input->post('year_word')){
                     $data['result_ans'] =  $this->get_result_search($this->input->post('word'),null);    
                 }else if(!$this->input->post('type_word')&&$this->input->post('year_word')){

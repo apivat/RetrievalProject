@@ -108,7 +108,7 @@ $autoload['language'] = array('date','calendar');
 |
 */
 
-$autoload['model'] = array('get_model','insert_model','login_model');
+$autoload['model'] = array('insert_model','login_model');
 
 
 
