@@ -49,7 +49,6 @@ class Insert_model extends Model {
     }
     
     private function indexCreate($word,$queryCate,$pub_id) {
-        //$vowels = array(",", ".","&nbsp;","?","!");
         $pub_index_word = $this->slug(strtolower(strip_tags($word)));
         $indexs = explode(" ", $pub_index_word);
         foreach ($indexs as $index) :

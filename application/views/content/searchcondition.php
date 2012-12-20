@@ -9,23 +9,23 @@
             <br/>
             <span style="padding-left:25px;">ค้นหาข้อมูลจาก:</span> 
             <select type="text" style="background: none repeat scroll 0 0 #FBFBFB;border: 1px solid #D2D2D2;font-size: 11px;margin: 5px 10px 0 4px;padding: 5px;width: 110px;" name="type_word" id="type_word">
-                <option value="">ทั้งหมด</option>
-                <option value="1">ชื่อเรื่อง</option>
-                <option value="2">ชื่อผู้แต่ง</option>
-                <option value="3">ชื่อวารสาร</option>
+                <option value="" <?php if($type_word==""){ echo "selected"; } ?>>ทั้งหมด</option>
+                <option value="1" <?php if($type_word=="1"){ echo "selected"; } ?>>ชื่อเรื่อง</option>
+                <option value="2" <?php if($type_word=="2"){ echo "selected"; } ?>>ชื่อผู้แต่ง</option>
+                <option value="3" <?php if($type_word=="3"){ echo "selected"; } ?>>ชื่อวารสาร</option>
             </select> 
             <span style="padding-left:10px;">ปีที่ตีพิมพ์:</span> 
             <select type="text" style="background: none repeat scroll 0 0 #FBFBFB;border: 1px solid #D2D2D2;font-size: 11px;margin: 5px 10px 0 4px;padding: 5px;width: 110px;" name="year_word" id="year_word">
-                <option value="">ทั้งหมด</option>
+                <option value="" <?php if($year_word==""){ echo "selected"; } ?>>ทั้งหมด</option>
                 <?php foreach($result_year as $year){ ?>
-                <option value="<?=$year->pub_year?>"><?=$year->pub_year?></option>
+                <option value="<?=$year->pub_year?>" <?php if($year_word==$year->pub_year){ echo "selected"; } ?> ><?=$year->pub_year?></option>
                 <?php } ?>
             </select>
         </form>
     </div>
 </div>
 <div style="border-bottom: 1px solid rgb(222, 222, 222); height: 57px; background-color: seashell;">
-    <div style="margin-left: 20px;margin-bottom: 2px;margin-top: 2px;">ค่าการประเมินกลยุทธ์การค้นคืนสารสนเทศ(Recall) : <b><?=$recall?></b></div>
+    <div style="margin-left: 20px;margin-bottom: 2px;margin-top: 2px;">Precision : <b><?=$Precision?></b></div>
     <div style="margin-left: 20px;margin-bottom: 2px;">ค้นหาได้เป็นจำนวน : <b><?=$result_count?></b></div>
     <div style="margin-left: 20px;margin-bottom: 2px;">เอกสารทั้งหมด : <b><?=$total?></b></div>
 </div>
@@ -41,7 +41,7 @@ if(!empty($result_ans)):
             </div>
             <div style="width: 100%;float: left;">
                 <div style="width: 3%;padding-left: 20px;padding-top:5px;float: left;"></div>
-                <div style="width: 90%;padding-top:5px;float: left;"><b>Similarity Of Document</b> = <?=$result_sim[0]?></div> 
+                <div style="width: 90%;padding-top:5px;float: left;"><b>Similarity Coefficient</b> = <?=$result_sim[0]?></div> 
             </div>
         </div>
 <?php

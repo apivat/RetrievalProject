@@ -70,30 +70,35 @@ class Home extends Controller {
         // จบการตัดคำในประโยคที่กรอกมาโดยการเว้นวรรคและปรับให้เป็นตัวเล็กกับตัว tag HTML ออก
 
         if($keyword_input_id):
-            if($year_word!=null):
-                $this->db->where('a.pub_year',$year_word);
-            endif;
             // หา keyword ว่าอยู่ใน publicstion ตัวไหนบ้าง
             $publication_id = array();
             foreach ($keyword_input_id as $keyword_id):
+                if(!empty($year_word)):
+                    $this->db->where('a.pub_year',$year_word);
+                endif;
+                $publication_count = $this->db->get('publication as a')->num_rows();
                 $publication_by_keyword = $this->db->where('b.key_id',$keyword_id)->join('keyword_publication as b','a.pub_id = b.pub_id','left')->get('publication as a');
                 foreach ($publication_by_keyword->result() as $publication):
                         $publication_id[] = $publication->pub_id;
                 endforeach;
             endforeach;
-
+            
             if(count($publication_id)!=0):
                 // หาค่าความเหมือน
                 $sc = array();
                 $result_sim = array();
-                $num_keyword = count($keyword_input_id);
-                $result_publication = $this->db->group_by('a.pub_id')->where_in('b.pub_id',$publication_id)->join('keyword_publication as b','a.pub_id = b.pub_id','left')->get('publication as a')->result();
+                $num_keyword = ($publication_count + 1);
+                $result_publication = $this->db->select('a.pub_id')->group_by('a.pub_id')->where_in('b.pub_id',$publication_id)->join('keyword_publication as b','a.pub_id = b.pub_id','left')->get('publication as a')->result();
                 foreach ($result_publication as $document):
+                    $key_publication_id[] = $document->pub_id;
+                endforeach;    
+
+                foreach ($result_publication as $document):     
                     $sc = 0;
                     $publication_by_keyword2 = $this->db->where('b.pub_id',$document->pub_id)->where_in('b.key_id',$keyword_input_id)->join('keyword_publication as b','a.pub_id = b.pub_id','left')->get('publication as a');
                     foreach ($publication_by_keyword2->result() as $document2):
-                        $publication_by_keyword = $this->db->where('b.key_id',$document2->key_id)->join('keyword_publication as b','a.pub_id = b.pub_id','left')->get('publication as a');
-                        $log10 = number_format(log10($num_keyword/$publication_by_keyword->num_rows()),3);
+                        $publication_by_keyword3 = $this->db->where('b.key_id',$document2->key_id)->join('keyword_publication as b','a.pub_id = b.pub_id','left')->get('publication as a');
+                        $log10 = number_format(log10($num_keyword/$publication_by_keyword3->num_rows()),3);
                         $log_count = number_format($log10*$document2->key_doc,3);
                         $sc = $sc + number_format($log_count*$log10,3);
                     endforeach;       
@@ -118,7 +123,7 @@ class Home extends Controller {
             $stop_word[] = $words->word;
         endforeach;
         // end run array stop word
-        
+
         // ตัดคำในประโยคที่กรอกมาโดยการเว้นวรรคและปรับให้เป็นตัวเล็กกับตัว tag HTML ออก
         $keyword_input_id = array();
         $pub_abstract = $this->slug(strtolower(strip_tags($text_word)));
@@ -132,6 +137,7 @@ class Home extends Controller {
             endif;
         endforeach;
         // จบการตัดคำในประโยคที่กรอกมาโดยการเว้นวรรคและปรับให้เป็นตัวเล็กกับตัว tag HTML ออก
+        
         if($type_word==1):
             $table = "keyword_title";
         elseif($type_word==2):
@@ -141,45 +147,50 @@ class Home extends Controller {
         endif;
  
         if($keyword_input_id):
-            if($year_word!=""):
-                $this->db->where('a.pub_year',$year_word);
-            endif;
             // หา keyword ว่าอยู่ใน publicstion ตัวไหนบ้าง
             $publication_id = array();
             foreach ($keyword_input_id as $keyword_id):
+                if(!empty($year_word)):
+                    $this->db->where('a.pub_year',$year_word);
+                endif;
+                $publication_count = $this->db->get('publication as a')->num_rows();
                 $publication_by_keyword = $this->db->where('b.key_id',$keyword_id)->join($table.' as b','a.pub_id = b.pub_id','left')->get('publication as a');
                 foreach ($publication_by_keyword->result() as $publication):
                         $publication_id[] = $publication->pub_id;
                 endforeach;
             endforeach;
-
+            
             if(count($publication_id)!=0):
                 // หาค่าความเหมือน
                 $sc = array();
                 $result_sim = array();
-                $num_keyword = count($keyword_input_id);
-                $result_publication = $this->db->group_by('a.pub_id')->where_in('b.pub_id',$publication_id)->join($table.' as b','a.pub_id = b.pub_id','left')->get('publication as a')->result();
+                $num_keyword = ($publication_count + 1);
+                $result_publication = $this->db->select('a.pub_id')->group_by('a.pub_id')->where_in('b.pub_id',$publication_id)->join($table.' as b','a.pub_id = b.pub_id','left')->get('publication as a')->result();
                 foreach ($result_publication as $document):
+                    $key_publication_id[] = $document->pub_id;
+                endforeach;    
+
+                foreach ($result_publication as $document):     
                     $sc = 0;
                     $publication_by_keyword2 = $this->db->where('b.pub_id',$document->pub_id)->where_in('b.key_id',$keyword_input_id)->join($table.' as b','a.pub_id = b.pub_id','left')->get('publication as a');
                     foreach ($publication_by_keyword2->result() as $document2):
-                        $publication_by_keyword = $this->db->where('b.key_id',$document2->key_id)->join($table.' as b','a.pub_id = b.pub_id','left')->get('publication as a');
-                        $log10 = number_format(log10($num_keyword/$publication_by_keyword->num_rows()),3);
+                        $publication_by_keyword3 = $this->db->where('b.key_id',$document2->key_id)->join($table.' as b','a.pub_id = b.pub_id','left')->get('publication as a');
+                        $log10 = number_format(log10($num_keyword/$publication_by_keyword3->num_rows()),3);
                         $log_count = number_format($log10*$document2->key_doc,3);
-                        $sc = $sc+number_format($log_count*$log10,3);
+                        $sc = $sc + number_format($log_count*$log10,3);
                     endforeach;       
                     $result_sim[] = array($sc,$document->pub_id);
                 endforeach;
-
+                
                 $this->SelectionSort($result_sim,"desc");
-                return $result_sim;                
+                return $result_sim;
             else:    
                 return false;
             endif;
         else:
             return false;
         endif;
-
+        
     }
     
     function index() {
@@ -266,10 +277,12 @@ class Home extends Controller {
         if($_POST){
             if($this->input->post('word')){
                 $data['word'] = $this->input->post('word');
-                $data['result_ans'] =  $this->get_result_search($this->input->post('word'),null);      
-                $data['result_count'] = count($data['result_ans']);
+                $data['result_ans'] =  $this->get_result_search($this->input->post('word'),null);  
+                if(!empty($data['result_ans'])){
+                    $data['result_count'] = count($data['result_ans']);
+                }
                 $data['total'] = $this->db->get('publication')->num_rows();
-                $data['recall'] = $data['result_count']/$data['total'];
+                $data['Precision'] = $data['result_count']/$data['total'];
             }else{
                 redirect('/');
             }            
@@ -291,16 +304,29 @@ class Home extends Controller {
         $data['recall'] = 0;
         $data['total'] = 0;
         $data['result_count'] = 0;  
+        $data['type_word'] = "";
+        $data['year_word'] = "";
         if($_POST){
             if($this->input->post('word')){
                 $data['word'] = $this->input->post('word');
                 if(!$this->input->post('type_word')&&!$this->input->post('year_word')){
-                    $data['result_ans'] =  $this->get_result_search($this->input->post('word'),null);    
+                    $data['result_ans'] =  $this->get_result_search($this->input->post('word'),null);  
+                    $data['total'] = $this->db->get('publication')->num_rows();
                 }else if(!$this->input->post('type_word')&&$this->input->post('year_word')){
                     $data['result_ans'] =  $this->get_result_search($this->input->post('word'),$this->input->post('year_word'));  
+                    $data['total'] = $this->db->get_where('publication',array('pub_year'=>$this->input->post('year_word')))->num_rows();
+                    $data['year_word'] = $this->input->post('year_word');
                 }else{
                     $data['result_ans'] =  $this->get_condition_search($this->input->post('word'),$this->input->post('type_word'),$this->input->post('year_word'));
-                }             
+                    $data['total'] = $this->db->get_where('publication',array('pub_year'=>$this->input->post('year_word')))->num_rows();
+                    $data['type_word'] = $this->input->post('type_word');
+                    $data['year_word'] = $this->input->post('year_word');
+                }
+                if(!empty($data['result_ans'])){
+                    $data['result_count'] = count($data['result_ans']);
+                }
+                $data['total'] = $this->db->get('publication')->num_rows();
+                $data['Precision'] = $data['result_count']/$data['total'];
             }else{
                 redirect('/searchcondition');
             }            

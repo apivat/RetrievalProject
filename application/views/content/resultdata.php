@@ -10,7 +10,7 @@
     </div>
 </div>
 <div style="border-bottom: 1px solid rgb(222, 222, 222); height: 57px; background-color: seashell;">
-    <div style="margin-left: 20px;margin-bottom: 2px;margin-top: 2px;">ค่าการประเมินกลยุทธ์การค้นคืนสารสนเทศ(Recall) : <b><?=$recall?></b></div>
+    <div style="margin-left: 20px;margin-bottom: 2px;margin-top: 2px;">Precision : <b><?=$Precision?></b></div>
     <div style="margin-left: 20px;margin-bottom: 2px;">ค้นหาได้เป็นจำนวน : <b><?=$result_count?></b></div>
     <div style="margin-left: 20px;margin-bottom: 2px;">เอกสารทั้งหมด : <b><?=$total?></b></div>
 </div>
@@ -26,7 +26,7 @@ if(!empty($result_ans)):
             </div>
             <div style="width: 100%;float: left;">
                 <div style="width: 3%;padding-left: 20px;padding-top:5px;float: left;"></div>
-                <div style="width: 90%;padding-top:5px;float: left;"><b>Similarity Of Document</b> = <?=$result_sim[0]?></div> 
+                <div style="width: 90%;padding-top:5px;float: left;"><b>Similarity Coefficient</b> = <?=$result_sim[0]?></div> 
             </div>
         </div>
 <?php
